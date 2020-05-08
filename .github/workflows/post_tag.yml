@@ -1,4 +1,4 @@
-name: Create Tag
+name: Post Tag
 
 on:
   pull_request:
@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: ayumu838/action-get-next-tag@2.0
+      - uses: ayumu838/action-get-next-tag@v1.0.0
         id: get-next-tag
 
       - uses: actions-ecosystem/action-push-tag@v1
