@@ -18,5 +18,5 @@ jobs:
       - uses: actions-ecosystem/action-push-tag@v1
         if: ${{ github.event.pull_request.merged == true }}
         with:
-          tag: '${{ steps.get-next-tag.outputs.tag }}'
+          tag: '${{ steps.get-next-tag.outputs.next_tag }}'
           message: 'PR #${{ github.event.pull_request.number }} ${{ github.event.pull_request.title }}'
